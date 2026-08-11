@@ -1,0 +1,2070 @@
+{
+  "your-local-roofers": {
+    "name": "Your Local Roofers",
+    "trade": "Roofing",
+    "city": "Sydney",
+    "searchTerm": "roofer Sydney",
+    "rank": 8,
+    "rating": 4.6,
+    "reviewCount": 47,
+    "website": "no website",
+    "phone": "(02) 9000 0000",
+    "address": "Unit 4, 12 Industrial Rd, Auburn NSW 2144",
+    "trafficPerMonth": 180,
+    "trafficLossPct": 68,
+    "trafficLossCalls": 122,
+    "serviceArea": "Auburn & Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 3 photos, all low quality. Competitors have 25+ project photos."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "47 reviews but 0 responses. Top 3 competitors respond to 100% of reviews."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in the last 6 months. Google rewards active profiles."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly. Weekend hours accurate."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Roofing contractor' — should be 'Roofing service'. Missing 2 secondary categories."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not defined. Customers outside Auburn can't find you."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified and matches website."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "3 unanswered questions from customers sitting on your profile."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Sydney Roof Masters",
+        "rating": 4.9,
+        "reviews": 214,
+        "photos": 60,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Top Notch Roofing Co",
+        "rating": 4.8,
+        "reviews": 189,
+        "photos": 45,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Metro Roof Repairs",
+        "rating": 4.7,
+        "reviews": 132,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "sydney-painting-experts-pty-ltd": {
+    "name": "Sydney Painting Experts pty ltd",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 6,
+    "rating": 5,
+    "reviewCount": 158,
+    "website": "sydneypaintingexperts.com.au",
+    "phone": "(02) 8000 0001",
+    "address": "45 Victoria Rd, Rozelle NSW 2039",
+    "trafficPerMonth": 250,
+    "trafficLossPct": 52,
+    "trafficLossCalls": 130,
+    "serviceArea": "Inner West & Eastern Suburbs",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 8 photos, most are low-res. Competitors have 40+ project photos."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "158 reviews but only 3 responses in the last year. Competitors respond within 24 hours."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 3 months. Weekly posts improve ranking."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Business hours set correctly with weekend hours."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Painter' — should be 'Painting service'. Missing secondary categories."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "pass",
+        "desc": "Service area defined correctly for Sydney metro."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified and matches website."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "2 unanswered questions about pricing and availability."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Painting Pros",
+        "rating": 4.9,
+        "reviews": 320,
+        "photos": 85,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Fresh Coat Painters Sydney",
+        "rating": 4.8,
+        "reviews": 275,
+        "photos": 62,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Colourworks Painting",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 48,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "mi-painting-maintenance": {
+    "name": "Mi Painting & Maintenance",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 7,
+    "rating": 5,
+    "reviewCount": 148,
+    "website": "mipainting.com.au",
+    "phone": "(02) 8000 0002",
+    "address": "78 Parramatta Rd, Haberfield NSW 2045",
+    "trafficPerMonth": 220,
+    "trafficLossPct": 55,
+    "trafficLossCalls": 121,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 5 photos, no project photos. Competitors have 40+ photos of completed work."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "148 reviews, only 1 response this year. Customers expect replies."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 6 months. Google rewards active profiles."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly with weekend availability."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Painter' — should be 'Painting'. Missing 'Maintenance' secondary."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "pass",
+        "desc": "Service area defined but limited to Inner West."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "1 unanswered question about exterior painting."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Painting Pros",
+        "rating": 4.9,
+        "reviews": 320,
+        "photos": 85,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Fresh Coat Painters Sydney",
+        "rating": 4.8,
+        "reviews": 275,
+        "photos": 62,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Colourworks Painting",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 48,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "360-degrees-sydney-electrical": {
+    "name": "360 Degrees Sydney Electrical",
+    "trade": "Electrical",
+    "city": "Sydney",
+    "searchTerm": "electrician Sydney",
+    "rank": 9,
+    "rating": 5,
+    "reviewCount": 118,
+    "website": "360sydneyelectrical.com.au",
+    "phone": "(02) 8000 0003",
+    "address": "22 Norton St, Leichhardt NSW 2040",
+    "trafficPerMonth": 300,
+    "trafficLossPct": 65,
+    "trafficLossCalls": 195,
+    "serviceArea": "Sydney wide",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 4 photos, none showing completed electrical work."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "118 reviews, 0 responses. Competitors respond to all reviews."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts ever. Active profiles rank higher."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly with 24/7 emergency service."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Electrician' — needs 'Electrical contractor' and 'Emergency electrician'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area says 'Sydney wide' but suburbs not listed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section set up at all."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Spark Sydney Electrical",
+        "rating": 4.9,
+        "reviews": 280,
+        "photos": 55,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Sure Fire Electrical",
+        "rating": 4.8,
+        "reviews": 210,
+        "photos": 42,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "JNJ Electrical",
+        "rating": 4.8,
+        "reviews": 175,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "a-bargain-gardener": {
+    "name": "A Bargain Gardener",
+    "trade": "Landscaping",
+    "city": "Sydney",
+    "searchTerm": "landscaper Sydney",
+    "rank": 10,
+    "rating": 5,
+    "reviewCount": 90,
+    "website": "abargaingardener.com.au",
+    "phone": "(02) 8000 0004",
+    "address": "15 Booth St, Annandale NSW 2038",
+    "trafficPerMonth": 160,
+    "trafficLossPct": 72,
+    "trafficLossCalls": 115,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 2 photos. Competitors have 30+ garden transformation photos."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "90 reviews, 0 responses. Customers expect a reply."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 8 months. Google penalizes inactive profiles."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Gardener' — should be 'Landscaper'. Missing 'Gardening service'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not defined. Can't be found outside Inner West."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Green Thumb Landscaping",
+        "rating": 4.9,
+        "reviews": 220,
+        "photos": 65,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Sydney Garden Kings",
+        "rating": 4.8,
+        "reviews": 180,
+        "photos": 50,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Outdoor Creations",
+        "rating": 4.7,
+        "reviews": 145,
+        "photos": 40,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "roofoz": {
+    "name": "RoofOz",
+    "trade": "Roofing",
+    "city": "Sydney",
+    "searchTerm": "roofer Sydney",
+    "rank": 7,
+    "rating": 4.9,
+    "reviewCount": 77,
+    "website": "roofoz.com.au",
+    "phone": "(02) 8000 0005",
+    "address": "33 Victoria Rd, Rozelle NSW 2039",
+    "trafficPerMonth": 200,
+    "trafficLossPct": 58,
+    "trafficLossCalls": 116,
+    "serviceArea": "Sydney metro",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 6 photos, none showing roof repairs. Competitors have 25+."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "77 reviews, 0 responses. Top competitors respond to every review."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 4 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category 'Roofing contractor' is correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed enough."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "1 unanswered question about tile roof repairs."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Roof Masters",
+        "rating": 4.9,
+        "reviews": 214,
+        "photos": 60,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Top Notch Roofing Co",
+        "rating": 4.8,
+        "reviews": 189,
+        "photos": 45,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Metro Roof Repairs",
+        "rating": 4.7,
+        "reviews": 132,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "aero-plumbing": {
+    "name": "Aero Plumbing",
+    "trade": "Plumbing",
+    "city": "Sydney",
+    "searchTerm": "plumber Sydney",
+    "rank": 11,
+    "rating": 5,
+    "reviewCount": 62,
+    "website": "aeroplumbing.com.au",
+    "phone": "(02) 8000 0006",
+    "address": "56 Lilyfield Rd, Rozelle NSW 2039",
+    "trafficPerMonth": 180,
+    "trafficLossPct": 78,
+    "trafficLossCalls": 140,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 3 photos. Competitors have 20+ completed job photos."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "62 reviews, 0 responses. Competitors respond within 24 hours."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts ever. Google rewards consistent posting."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly with 24/7 emergency callout."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Plumber' — should be 'Plumbing service'. Missing 'Emergency plumber'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area too narrow. Need to expand to more suburbs."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section set up."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Fixed Fast Plumbing",
+        "rating": 4.9,
+        "reviews": 310,
+        "photos": 70,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Watertight Plumbing",
+        "rating": 4.8,
+        "reviews": 245,
+        "photos": 55,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Flow Plumbing Services",
+        "rating": 4.8,
+        "reviews": 190,
+        "photos": 42,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "powertech-electrical-group-24-hours": {
+    "name": "Powertech Electrical Group 24 hours",
+    "trade": "Electrical",
+    "city": "Sydney",
+    "searchTerm": "electrician Sydney",
+    "rank": 12,
+    "rating": 5,
+    "reviewCount": 72,
+    "website": "powertechelectrical.com.au",
+    "phone": "(02) 8000 0007",
+    "address": "90 Darling St, Balmain East NSW 2041",
+    "trafficPerMonth": 200,
+    "trafficLossPct": 82,
+    "trafficLossCalls": 164,
+    "serviceArea": "Balmain & Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 2 photos, none showing electrical work. 25+ photos needed."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "72 reviews, 0 responses. Competitors reply to every review."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 5 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "24/7 emergency hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Electrician' — missing 'Emergency electrician' and 'Electrical contractor'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area too narrow. Only Balmain & Inner West listed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Spark Sydney Electrical",
+        "rating": 4.9,
+        "reviews": 280,
+        "photos": 55,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Sure Fire Electrical",
+        "rating": 4.8,
+        "reviews": 210,
+        "photos": 42,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "JNJ Electrical",
+        "rating": 4.8,
+        "reviews": 175,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "general-painting-contractors-pty-ltd": {
+    "name": "General Painting Contractors Pty Ltd",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 5,
+    "rating": 5,
+    "reviewCount": 112,
+    "website": "generalpaintingcontractors.com.au",
+    "phone": "(02) 8000 0008",
+    "address": "12 Burrows Rd, Alexandria NSW 2015",
+    "trafficPerMonth": 240,
+    "trafficLossPct": 48,
+    "trafficLossCalls": 115,
+    "serviceArea": "Sydney wide",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 6 photos, few project shots. Competitors have 40+."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "112 reviews but only 2 responses this year. Competitors respond to all."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 4 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Painter' — should be 'Painting service'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "pass",
+        "desc": "Service area defined for metro."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section set up."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Painting Pros",
+        "rating": 4.9,
+        "reviews": 320,
+        "photos": 85,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Fresh Coat Painters Sydney",
+        "rating": 4.8,
+        "reviews": 275,
+        "photos": 62,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Colourworks Painting",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 48,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "opal-professional-company": {
+    "name": "opal professional company",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 6,
+    "rating": 5,
+    "reviewCount": 110,
+    "website": "opal-painting.com.au",
+    "phone": "(02) 8000 0009",
+    "address": "60 Ebley St, Bondi Junction NSW 2022",
+    "trafficPerMonth": 230,
+    "trafficLossPct": 50,
+    "trafficLossCalls": 115,
+    "serviceArea": "Eastern Suburbs",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 4 photos, no before/after. Competitors have 35+."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "110 reviews, 1 response this year."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 5 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category needs updating to 'Painting service'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area too narrow — Eastern Suburbs only."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone number verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "1 unanswered question on pricing."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Sydney Painting Pros",
+        "rating": 4.9,
+        "reviews": 320,
+        "photos": 85,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Fresh Coat Painters Sydney",
+        "rating": 4.8,
+        "reviews": 275,
+        "photos": 62,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Colourworks Painting",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 48,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "upscale-painting-decorating": {
+    "name": "Upscale Painting & Decorating",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 8,
+    "rating": 5,
+    "reviewCount": 85,
+    "website": "upscalepainting.com.au",
+    "phone": "(02) 8000 0010",
+    "address": "25 Foucart St, Rozelle NSW 2039",
+    "trafficPerMonth": 190,
+    "trafficLossPct": 62,
+    "trafficLossCalls": 118,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 5 photos, low quality. 30+ needed."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "85 reviews, 0 responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 6 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category is 'Painter' — should be 'Painting service'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not defined."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Sydney Painting Pros",
+        "rating": 4.9,
+        "reviews": 320,
+        "photos": 85,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Fresh Coat Painters Sydney",
+        "rating": 4.8,
+        "reviews": 275,
+        "photos": 62,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Colourworks Painting",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 48,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "tile-and-grout-pro": {
+    "name": "Tile and Grout Pro",
+    "trade": "Tiling",
+    "city": "Sydney",
+    "searchTerm": "tiler Sydney",
+    "rank": 9,
+    "rating": 4.2,
+    "reviewCount": 145,
+    "website": "tileandgroutpro.com.au",
+    "phone": "(02) 8000 0011",
+    "address": "18 Kingsgrove Rd, Kingsgrove NSW 2208",
+    "trafficPerMonth": 210,
+    "trafficLossPct": 70,
+    "trafficLossCalls": 147,
+    "serviceArea": "South West Sydney",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 7 photos, no tiling transformations."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "4.2★ rating is below competitors. 145 reviews but several 1★ unanswered."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 3 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category 'Tiler' is correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area too narrow."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Tile Masters",
+        "rating": 4.9,
+        "reviews": 260,
+        "photos": 70,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Pro Tiling Co",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 52,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Elegant Tiling Services",
+        "rating": 4.8,
+        "reviews": 150,
+        "photos": 40,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "nhk-tiling": {
+    "name": "NHK Tiling",
+    "trade": "Tiling",
+    "city": "Sydney",
+    "searchTerm": "tiler Sydney",
+    "rank": 10,
+    "rating": 4.7,
+    "reviewCount": 72,
+    "website": "nhktiling.com.au",
+    "phone": "(02) 8000 0012",
+    "address": "42 Canley Vale Rd, Canley Vale NSW 2166",
+    "trafficPerMonth": 150,
+    "trafficLossPct": 74,
+    "trafficLossCalls": 111,
+    "serviceArea": "West Sydney",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 3 photos. Competitors have 40+."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "72 reviews, 0 responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 6 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "1 unanswered question about bathroom tiling."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Tile Masters",
+        "rating": 4.9,
+        "reviews": 260,
+        "photos": 70,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Pro Tiling Co",
+        "rating": 4.8,
+        "reviews": 195,
+        "photos": 52,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Elegant Tiling Services",
+        "rating": 4.8,
+        "reviews": 150,
+        "photos": 40,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "service-today-plumber-balmain": {
+    "name": "Service Today Plumber Balmain",
+    "trade": "Plumbing",
+    "city": "Sydney",
+    "searchTerm": "plumber Sydney",
+    "rank": 9,
+    "rating": 4.7,
+    "reviewCount": 70,
+    "website": "servicetoday.com.au",
+    "phone": "(02) 8000 0013",
+    "address": "88 Darling St, Balmain NSW 2041",
+    "trafficPerMonth": 170,
+    "trafficLossPct": 76,
+    "trafficLossCalls": 129,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 4 photos, no completed job shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "70 reviews, 0 responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 5 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set with 24/7 emergency."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "fail",
+        "desc": "Primary category 'Plumber' — missing 'Emergency plumber'."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area too narrow."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 2,
+    "failCount": 6,
+    "competitors": [
+      {
+        "name": "Fixed Fast Plumbing",
+        "rating": 4.9,
+        "reviews": 310,
+        "photos": 70,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Watertight Plumbing",
+        "rating": 4.8,
+        "reviews": 245,
+        "photos": 55,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Flow Plumbing Services",
+        "rating": 4.8,
+        "reviews": 190,
+        "photos": 42,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "sydney-plumbing-and-drainage": {
+    "name": "Sydney Plumbing and Drainage",
+    "trade": "Plumbing",
+    "city": "Sydney",
+    "searchTerm": "plumber Sydney",
+    "rank": 7,
+    "rating": 4.9,
+    "reviewCount": 95,
+    "website": "sydneypd.com.au",
+    "phone": "(02) 8000 0014",
+    "address": "30 Botany Rd, Alexandria NSW 2015",
+    "trafficPerMonth": 200,
+    "trafficLossPct": 60,
+    "trafficLossCalls": 120,
+    "serviceArea": "Sydney wide",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 5 photos, no drain/before-after shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "95 reviews, 1 response this year."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 4 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly with emergency."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed enough."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Fixed Fast Plumbing",
+        "rating": 4.9,
+        "reviews": 310,
+        "photos": 70,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Watertight Plumbing",
+        "rating": 4.8,
+        "reviews": 245,
+        "photos": 55,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Flow Plumbing Services",
+        "rating": 4.8,
+        "reviews": 190,
+        "photos": 42,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "sydney-local-roofers": {
+    "name": "Sydney Local Roofers",
+    "trade": "Roofing",
+    "city": "Sydney",
+    "searchTerm": "roofer Sydney",
+    "rank": 6,
+    "rating": 5,
+    "reviewCount": 58,
+    "website": "sydneylocalroofers.com.au",
+    "phone": "(02) 8000 0015",
+    "address": "14 Parramatta Rd, Summer Hill NSW 2130",
+    "trafficPerMonth": 190,
+    "trafficLossPct": 56,
+    "trafficLossCalls": 106,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 5 photos, no roof repair shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "58 reviews, 0 responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 6 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category 'Roofing contractor' correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not defined."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "1 unanswered question on roof replacement."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Roof Masters",
+        "rating": 4.9,
+        "reviews": 214,
+        "photos": 60,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Top Notch Roofing Co",
+        "rating": 4.8,
+        "reviews": 189,
+        "photos": 45,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Metro Roof Repairs",
+        "rating": 4.7,
+        "reviews": 132,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "sydney-roofing-and-gutters": {
+    "name": "Sydney Roofing and Gutters",
+    "trade": "Roofing",
+    "city": "Sydney",
+    "searchTerm": "roofer Sydney",
+    "rank": 8,
+    "rating": 4.9,
+    "reviewCount": 56,
+    "website": "sydneyroofingandgutters.com.au",
+    "phone": "(02) 8000 0016",
+    "address": "22 Wilson St, Newtown NSW 2042",
+    "trafficPerMonth": 170,
+    "trafficLossPct": 64,
+    "trafficLossCalls": 109,
+    "serviceArea": "Inner West & City",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 4 photos, no gutter/roof work shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "56 reviews, 0 responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 5 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Roof Masters",
+        "rating": 4.9,
+        "reviews": 214,
+        "photos": 60,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Top Notch Roofing Co",
+        "rating": 4.8,
+        "reviews": 189,
+        "photos": 45,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Metro Roof Repairs",
+        "rating": 4.7,
+        "reviews": 132,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "sydney-roofing-specialists": {
+    "name": "Sydney Roofing Specialists",
+    "trade": "Roofing",
+    "city": "Sydney",
+    "searchTerm": "roofer Sydney",
+    "rank": 6,
+    "rating": 5,
+    "reviewCount": 188,
+    "website": "sydneyroofingspecialists.com.au",
+    "phone": "(02) 8000 0020",
+    "address": "15 Victoria Rd, Parramatta NSW 2150",
+    "trafficPerMonth": 220,
+    "trafficLossPct": 50,
+    "trafficLossCalls": 110,
+    "serviceArea": "Western Sydney",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 6 photos, no work-in-progress shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "188 reviews, no responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "pass",
+        "desc": "Posts every 2 weeks."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Roof Masters",
+        "rating": 4.9,
+        "reviews": 214,
+        "photos": 60,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Top Notch Roofing Co",
+        "rating": 4.8,
+        "reviews": 189,
+        "photos": 45,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Metro Roof Repairs",
+        "rating": 4.7,
+        "reviews": 132,
+        "photos": 38,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "rozelle-plumbing": {
+    "name": "Rozelle Plumbing",
+    "trade": "Plumbing",
+    "city": "Sydney",
+    "searchTerm": "plumber Sydney",
+    "rank": 8,
+    "rating": 4.8,
+    "reviewCount": 191,
+    "website": "rozelleplumbing.com.au",
+    "phone": "(02) 8000 0021",
+    "address": "42 Darling St, Rozelle NSW 2039",
+    "trafficPerMonth": 200,
+    "trafficLossPct": 60,
+    "trafficLossCalls": 120,
+    "serviceArea": "Inner West",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 5 photos, no job photos."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "191 reviews, no responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 3 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not set."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Syd Plumb Pro",
+        "rating": 4.8,
+        "reviews": 312,
+        "photos": 80,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Aero Plumbing",
+        "rating": 5,
+        "reviews": 62,
+        "photos": 25,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Service Today",
+        "rating": 4.7,
+        "reviews": 70,
+        "photos": 30,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "electrician-to-the-rescue": {
+    "name": "Electrician To The Rescue",
+    "trade": "Electrical",
+    "city": "Sydney",
+    "searchTerm": "electrician Sydney",
+    "rank": 9,
+    "rating": 4.8,
+    "reviewCount": 122,
+    "website": "electriciantotherescue.com.au",
+    "phone": "(02) 8000 0022",
+    "address": "88 King St, Newtown NSW 2042",
+    "trafficPerMonth": 240,
+    "trafficLossPct": 65,
+    "trafficLossCalls": 156,
+    "serviceArea": "Inner West & City",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 4 photos, no electrical work shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "122 reviews, no responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "fail",
+        "desc": "No posts in 4 months."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "360 Degrees Electrical",
+        "rating": 5,
+        "reviews": 118,
+        "photos": 35,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "Powertech Electrical",
+        "rating": 5,
+        "reviews": 72,
+        "photos": 20,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Sparky Nearby",
+        "rating": 4.8,
+        "reviews": 95,
+        "photos": 28,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "akd-painting": {
+    "name": "AKD Painting",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 8,
+    "rating": 5,
+    "reviewCount": 140,
+    "website": "akdpainting.com.au",
+    "phone": "(02) 8000 0023",
+    "address": "7 Smith St, Surry Hills NSW 2010",
+    "trafficPerMonth": 210,
+    "trafficLossPct": 58,
+    "trafficLossCalls": 122,
+    "serviceArea": "Eastern Suburbs & City",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 5 photos, no before/after shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "140 reviews, no responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "pass",
+        "desc": "Posts weekly."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Painting Experts",
+        "rating": 5,
+        "reviews": 158,
+        "photos": 50,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "General Painting",
+        "rating": 5,
+        "reviews": 112,
+        "photos": 40,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "Mi Painting",
+        "rating": 5,
+        "reviews": 148,
+        "photos": 45,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  },
+  "halifax-painting-sydney": {
+    "name": "Halifax Painting Sydney",
+    "trade": "Painting",
+    "city": "Sydney",
+    "searchTerm": "painter Sydney",
+    "rank": 7,
+    "rating": 5,
+    "reviewCount": 183,
+    "website": "halifaxbuilding.com.au",
+    "phone": "(02) 8000 0024",
+    "address": "32 Oxford St, Paddington NSW 2021",
+    "trafficPerMonth": 230,
+    "trafficLossPct": 52,
+    "trafficLossCalls": 120,
+    "serviceArea": "Eastern Suburbs & City",
+    "findings": [
+      {
+        "icon": "📷",
+        "label": "Photos",
+        "status": "fail",
+        "desc": "Only 6 photos, no interior work shots."
+      },
+      {
+        "icon": "⭐",
+        "label": "Reviews",
+        "status": "fail",
+        "desc": "183 reviews, no responses."
+      },
+      {
+        "icon": "💬",
+        "label": "Google Posts",
+        "status": "pass",
+        "desc": "Posts every 2 weeks."
+      },
+      {
+        "icon": "🕐",
+        "label": "Hours",
+        "status": "pass",
+        "desc": "Hours set correctly."
+      },
+      {
+        "icon": "🏷️",
+        "label": "Category",
+        "status": "pass",
+        "desc": "Primary category correct."
+      },
+      {
+        "icon": "📍",
+        "label": "Service Area",
+        "status": "fail",
+        "desc": "Service area not detailed."
+      },
+      {
+        "icon": "📞",
+        "label": "Phone",
+        "status": "pass",
+        "desc": "Phone verified."
+      },
+      {
+        "icon": "❓",
+        "label": "Q&A",
+        "status": "fail",
+        "desc": "No Q&A section."
+      }
+    ],
+    "passCount": 3,
+    "failCount": 5,
+    "competitors": [
+      {
+        "name": "Sydney Painting Experts",
+        "rating": 5,
+        "reviews": 158,
+        "photos": 50,
+        "responds": true,
+        "rank": 1
+      },
+      {
+        "name": "General Painting",
+        "rating": 5,
+        "reviews": 112,
+        "photos": 40,
+        "responds": true,
+        "rank": 2
+      },
+      {
+        "name": "AKD Painting",
+        "rating": 5,
+        "reviews": 140,
+        "photos": 35,
+        "responds": true,
+        "rank": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "slug": "360-degrees-sydney-electrical",
+    "name": "360 Degrees Sydney Electrical",
+    "trade": "Electrical",
+    "email": "info@360sydneyelectrical.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:15.957Z",
+    "followUpDate": null,
+    "emailsSent": 3
+  },
+  {
+    "slug": "a-bargain-gardener",
+    "name": "A Bargain Gardener",
+    "trade": "Landscaping",
+    "email": "info@abargaingardener.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:13.798Z",
+    "followUpDate": null,
+    "emailsSent": 3
+  },
+  {
+    "slug": "aero-plumbing",
+    "name": "Aero Plumbing",
+    "trade": "Plumbing",
+    "email": "info@aeroplumbing.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:05.051Z",
+    "followUpDate": null,
+    "emailsSent": 3
+  },
+  {
+    "slug": "akd-painting",
+    "name": "AKD Painting",
+    "trade": "Painting",
+    "email": "info@akdpainting.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:53:53.794Z",
+    "followUpDate": null,
+    "emailsSent": 1
+  },
+  {
+    "slug": "electrician-to-the-rescue",
+    "name": "Electrician To The Rescue",
+    "trade": "Electrical",
+    "email": "info@electriciantotherescue.com.au",
+    "status": "Sent",
+    "sentDate": "2026-07-28T06:28:39.972Z",
+    "followUpDate": null,
+    "emailsSent": 1
+  },
+  {
+    "slug": "general-painting-contractors-pty-ltd",
+    "name": "General Painting Contractors Pty Ltd",
+    "trade": "Painting",
+    "email": "info@generalpaintingcontractors.com.au",
+    "status": "Sent",
+    "sentDate": "2026-07-28T06:28:21.091Z",
+    "followUpDate": null,
+    "emailsSent": 3
+  },
+  {
+    "slug": "just-electrical-sydney-pty-ltd",
+    "name": "Just Electrical Sydney Pty Ltd",
+    "trade": null,
+    "email": "info@justelectricalsydney.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-11T03:12:09.326Z",
+    "followUpDate": null,
+    "emailsSent": 1
+  },
+  {
+    "slug": "mi-painting-maintenance",
+    "name": "Mi Painting & Maintenance",
+    "trade": "Painting",
+    "email": "info@mipainting.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:56:33.689Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "nhk-tiling",
+    "name": "NHK Tiling",
+    "trade": "Tiling",
+    "email": "info@nhktiling.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:37.308Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "opal-professional-company",
+    "name": "opal professional company",
+    "trade": "Painting",
+    "email": "info@opal-painting.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:55:51.580Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "powertech-electrical-group-24-hours",
+    "name": "Powertech Electrical Group 24 hours",
+    "trade": "Electrical",
+    "email": "info@powertechelectrical.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:55:11.479Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "roofoz",
+    "name": "RoofOz",
+    "trade": "Roofing",
+    "email": "info@roofoz.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:55:29.907Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "service-today-plumber-balmain",
+    "name": "Service Today Plumber Balmain",
+    "trade": "Plumbing",
+    "email": "info@servicetoday.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:27.758Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "sydney-local-roofers",
+    "name": "Sydney Local Roofers",
+    "trade": "Roofing",
+    "email": "info@sydneylocalroofers.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:55:04.203Z",
+    "followUpDate": null,
+    "emailsSent": 1
+  },
+  {
+    "slug": "sydney-painting-experts-pty-ltd",
+    "name": "Sydney Painting Experts pty ltd",
+    "trade": "Painting",
+    "email": "info@sydneypaintingexperts.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:56:43.165Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "sydney-plumbing-and-drainage",
+    "name": "Sydney Plumbing and Drainage",
+    "trade": "Plumbing",
+    "email": "info@sydneypd.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:55:15.880Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "sydney-roofing-and-gutters",
+    "name": "Sydney Roofing and Gutters",
+    "trade": "Roofing",
+    "email": "info@sydneyroofingandgutters.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:55.897Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "sydney-roofing-specialists",
+    "name": "Sydney Roofing Specialists",
+    "trade": "Roofing",
+    "email": "info@sydneyroofingspecialists.com",
+    "status": "Sent",
+    "sentDate": "2026-08-11T03:38:38.181Z",
+    "followUpDate": null,
+    "emailsSent": 1
+  },
+  {
+    "slug": "tile-and-grout-pro",
+    "name": "Tile and Grout Pro",
+    "trade": "Tiling",
+    "email": "info@tileandgroutpro.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:46.248Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "upscale-painting-decorating",
+    "name": "Upscale Painting & Decorating",
+    "trade": "Painting",
+    "email": "info@upscalepainting.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-05T00:54:52.619Z",
+    "followUpDate": null,
+    "emailsSent": 2
+  },
+  {
+    "slug": "your-local-roofers",
+    "name": "Your Local Roofers",
+    "trade": "Roofing",
+    "email": "info@yourlocalroofers.com.au",
+    "status": "Sent",
+    "sentDate": "2026-08-11T03:38:22.737Z",
+    "followUpDate": null,
+    "emailsSent": 1
+  },
+  {
+    "slug": "halifax-painting-sydney",
+    "name": "Halifax Painting Sydney",
+    "trade": "Painting",
+    "email": null,
+    "status": "Drafted",
+    "sentDate": null,
+    "followUpDate": null,
+    "emailsSent": 0
+  },
+  {
+    "slug": "rozelle-plumbing",
+    "name": "Rozelle Plumbing",
+    "trade": "Plumbing",
+    "email": null,
+    "status": "Drafted",
+    "sentDate": null,
+    "followUpDate": null,
+    "emailsSent": 0
+  }
+]
