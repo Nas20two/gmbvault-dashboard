@@ -2,7 +2,7 @@
 // We prefer Vercel KV; fall back to an in-memory map seeded from all-data when
 // KV env vars are absent (local dev / no paid KV). Writes without KV are
 // non-persistent — documented in README. Seed data (all-data.json) is read-only.
-import type { PipelineState, TrackRecord } from './types';
+import type { PipelineState, TrackRecord } from './types.js';
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';

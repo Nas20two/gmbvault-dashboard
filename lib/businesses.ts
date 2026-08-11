@@ -1,8 +1,8 @@
 // Joins ALL_DATA + pipeline + opens into the dashboard's Business view.
-import type { Business, BusinessDetail, OpenState, PipelineState, TrackRecord } from './types';
-import { deriveStatus, needsFollowUp } from './status';
-import * as store from './store';
-import type { AuditRow, EmailSeed } from './store';
+import type { Business, BusinessDetail, OpenState, PipelineState, TrackRecord } from './types.js';
+import { deriveStatus, needsFollowUp } from './status.js';
+import * as store from './store.js';
+import type { AuditRow, EmailSeed } from './store.js';
 
 export function computeScore(audit: AuditRow): number {
   const total = audit.passCount + audit.failCount;

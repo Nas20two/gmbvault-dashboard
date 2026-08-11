@@ -1,5 +1,5 @@
-import type { Business } from './types';
-import { FOLLOW_UP_DAYS } from './status';
+import type { Business } from './types.js';
+import { FOLLOW_UP_DAYS } from './status.js';
 
 export function daysAgo(iso: string | null, now: Date = new Date()): number | null {
   if (!iso) return null;

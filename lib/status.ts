@@ -1,4 +1,4 @@
-import type { Status } from './types';
+import type { Status } from './types.js';
 
 // The one constant that drives the whole clock (THORN §10).
 export const FOLLOW_UP_DAYS = 5;
