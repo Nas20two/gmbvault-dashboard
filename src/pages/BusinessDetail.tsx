@@ -5,7 +5,7 @@ import StatusBadge from '../components/StatusBadge';
 import EmailThread from '../components/EmailThread';
 import MetricDisplay from '../components/MetricDisplay';
 import { getBusiness, patchBusiness, clearToken, AuthError } from '../api/client';
-import { nextCheckInDate, seenText } from '../lib/helpers';
+import { friendlyDate, seenText } from '../lib/helpers';
 
 export default function BusinessDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -78,7 +78,7 @@ export default function BusinessDetail() {
             <h1 className="text-2xl font-bold text-gray-900">{biz.name}</h1>
             <div className="mt-2"><StatusBadge status={biz.status} /></div>
             <div className="mt-3"><MetricDisplay rating={biz.rating} reviewCount={biz.reviewCount} score={biz.score} rank={biz.rank} /></div>
-            <p className="mt-1 text-sm text-gray-500">Last contacted {biz.sentDate ? nextCheckInDate(biz.sentDate) : '—'} · {seenText(biz.open)}</p>
+            <p className="mt-1 text-sm text-gray-500">Last contacted {biz.sentDate ? friendlyDate(biz.sentDate) : '—'} · {seenText(biz.open)}</p>
           </div>
           {confirm && <p className="rounded-lg bg-green-50 px-3 py-1.5 text-sm font-medium text-green-700">{confirm}</p>}
         </div>

@@ -26,11 +26,12 @@ export async function toBusiness(
   now: Date = new Date(),
 ): Promise<Business> {
   const audit = store.getAudit(slug);
+  const seed = store.getBusinessSeed(slug);
   const emails = await store.getEmailsFor(slug);
   const effStatus = deriveStatus(pipe, pipe.sentDate, now);
   return {
     slug,
-    name: audit?.name ?? slug,
+    name: audit?.name ?? seed?.name ?? slug,
     trade: audit?.trade ?? '',
     city: audit?.city ?? '',
     rank: audit?.rank ?? 0,
