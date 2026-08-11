@@ -3,22 +3,25 @@ import { getBearer, jsonResponse, parseJson, verifyToken } from '../../lib/auth.
 import { toDetail } from '../../lib/businesses.js';
 import * as store from '../../lib/store.js';
 
-export default async function handler(req: IncomingMessage, res: ServerResponse, slug?: string) {
+export default async function handler(req: IncomingMessage, res: ServerResponse) {
   const authed = await verifyToken(getBearer(req));
   if (!authed) {
     jsonResponse(res, 401, { error: 'Unauthorized' });
     return;
   }
+
+  // Extract slug from URL: /api/business/[slug]
+  const slug = req.url?.split('/').filter(Boolean).pop()?.split('?')[0];
   if (!slug) {
     jsonResponse(res, 400, { error: 'Missing slug' });
     return;
   }
+
   if (!store.getBusinessSeed(slug)) {
-    // Unknown slug -> a real 404 (getPipeline would otherwise fabricate a
-    // near-empty pipeline and return 200).
     jsonResponse(res, 404, { error: 'Not found' });
     return;
   }
+
   if (req.method === 'GET') {
     const detail = await toDetail(slug);
     if (!detail) {
@@ -28,6 +31,7 @@ export default async function handler(req: IncomingMessage, res: ServerResponse,
     jsonResponse(res, 200, { business: detail });
     return;
   }
+
   if (req.method === 'PATCH') {
     const body = await parseJson<{ action?: string; notes?: string }>(req);
     if (!body) {
@@ -37,10 +41,6 @@ export default async function handler(req: IncomingMessage, res: ServerResponse,
     const pipe = await store.getPipeline(slug);
     const now = new Date().toISOString();
 
-    // THORN §10 state machine + "reply always wins" + guard against stale
-    // follow-up taps overwriting a live reply. followup_1/followup_2 are
-    // derived from followUpCounter + elapsed time (see deriveStatus), so the
-    // stored status stays 'sent' across follow-up taps.
     let apply = true;
     switch (body.action) {
       case 'followup_sent':
@@ -67,8 +67,6 @@ export default async function handler(req: IncomingMessage, res: ServerResponse,
         return;
     }
     if (!apply) {
-      // A reply already exists — do not let a stale tap win (THORN §2).
-      // No state changed, so don't bump version or re-persist.
       jsonResponse(res, 200, { business: await toDetail(slug) });
       return;
     }
@@ -77,5 +75,6 @@ export default async function handler(req: IncomingMessage, res: ServerResponse,
     jsonResponse(res, 200, { business: await toDetail(slug) });
     return;
   }
+
   jsonResponse(res, 405, { error: 'Method not allowed' });
 }
