@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { jsonResponse, sha256 } from '../src/lib/auth.js';
-import { getBusinessSeed, logOpen } from '../src/lib/store.js';
+import { jsonResponse, sha256 } from '../lib/auth';
+import { getBusinessSeed, logOpen } from '../lib/store';
 
 // Standard 1x1 transparent GIF (SATORI §5 verified).
 const GIF_B64 = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';

@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { getBearer, jsonResponse, verifyToken } from '../src/lib/auth.js';
-import { getOpens } from '../src/lib/store.js';
+import { getBearer, jsonResponse, verifyToken } from '../lib/auth';
+import { getOpens } from '../lib/store';
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
   if (req.method !== 'GET') {
