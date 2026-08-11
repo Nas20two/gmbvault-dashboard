@@ -78,8 +78,14 @@ const opensKey = () => 'opens:all';
 export async function getPipeline(slug: string): Promise<PipelineState> {
   const c = await kvClient();
   if (c) {
-    const v = await c.hgetall(key(slug));
-    if (v) return v as unknown as PipelineState;
+    const raw = await c.get(key(slug));
+    if (raw != null) {
+      try {
+        return JSON.parse(raw as string) as PipelineState;
+      } catch {
+        // Unreadable/corrupt stored value — fall through to a fresh seed.
+      }
+    }
   } else if (memState.has(slug)) {
     return memState.get(slug)!;
   }
@@ -89,7 +95,11 @@ export async function getPipeline(slug: string): Promise<PipelineState> {
 export async function savePipeline(slug: string, state: PipelineState): Promise<void> {
   const c = await kvClient();
   if (c) {
-    await c.hset(key(slug), state as any);
+    // Store the whole state as one JSON string via set/get. hset rejects nulls
+    // (JSON-serializes them to the literal string "null"), corrupting
+    // repliedDate:null/convertedDate:null on the round-trip. JSON.stringify
+    // preserves real nulls.
+    await c.set(key(slug), JSON.stringify(state));
     return;
   }
   memState.set(slug, state);
@@ -130,6 +140,11 @@ export function freshPipeline(slug: string): PipelineState {
 export async function logOpen(rec: TrackRecord): Promise<void> {
   const c = await kvClient();
   const all = await getOpens();
+  // Dedupe by (slug, emailHash) so re-opens of the same recipient don't
+  // inflate the count and "opened" flips exactly once.
+  if (all.some((o) => o.slug === rec.slug && o.emailHash === rec.emailHash)) {
+    return;
+  }
   all.push(rec);
   if (c) {
     await c.set(opensKey(), all);

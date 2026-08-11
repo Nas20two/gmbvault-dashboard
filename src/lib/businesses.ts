@@ -1,5 +1,5 @@
 // Joins ALL_DATA + pipeline + opens into the dashboard's Business view.
-import type { Business, BusinessDetail, OpenState, PipelineState, Status, TrackRecord } from '../types';
+import type { Business, BusinessDetail, OpenState, PipelineState, TrackRecord } from '../types';
 import { deriveStatus, needsFollowUp } from './status';
 import * as store from './store';
 import type { AuditRow, EmailSeed } from './store';
@@ -85,8 +85,4 @@ export async function listBusinesses(now: Date = new Date()): Promise<Business[]
     if (aAtt !== bAtt) return bAtt - aAtt;
     return a.name.localeCompare(b.name);
   });
-}
-
-export function statusFromState(p: PipelineState): Status {
-  return p.status;
 }

@@ -60,7 +60,3 @@ export function seenText(status: Business['open']): string {
     case 'untracked': return '— No tracker on this one';
   }
 }
-
-export function marineStatus(b: Pick<Business, 'open'>): string {
-  return seenText(b.open);
-}

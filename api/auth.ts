@@ -11,14 +11,23 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
     jsonResponse(res, 429, { error: 'Too many attempts. Please wait a minute and try again.' });
     return;
   }
-  const { password } = await parseJson<{ password?: string }>(req);
+  const body = await parseJson<{ password?: string }>(req);
+  if (!body) {
+    jsonResponse(res, 400, { error: 'Invalid JSON body' });
+    return;
+  }
   const hash = process.env.DASHBOARD_PASSWORD_HASH;
-  const ok = await verifyPassword(password ?? '', hash);
+  const ok = await verifyPassword(body.password ?? '', hash);
   if (!ok) {
     recordFailure(ip);
     jsonResponse(res, 401, { error: 'That password didn’t work. Try again.' });
     return;
   }
   const token = await makeToken();
+  if (!token) {
+    // JWT_SECRET missing — fail closed rather than sign with a guessable secret.
+    jsonResponse(res, 500, { error: 'Server not configured. Please try again later.' });
+    return;
+  }
   jsonResponse(res, 200, { token });
 }

@@ -52,3 +52,7 @@ Serverless functions need `vercel dev` (or a KV-aware runtime) to hit `/api/*`. 
 
 ## Phase 1 exclusions (honored)
 No email sending, no Google Posts/reviews, no multi-user, no analytics beyond open rate, no write-back to MCP. Dashboard is read-only for outreach data.
+
+> **Open tracking (Phase 1.2).** `/api/track` + `/api/opens` are wired and validated (known-slug + email-identity checks, dedupe by slug+emailHash), and the "seen" UI reads from them. **But the tracking pixel is not yet embedded in any email body** — Phase 1.1 emails are synthetic placeholders and nothing sends, so an email is never actually opened and `getOpens()` stays empty until Phase 1.2 wires the pixel into real sent mail. Until then treat the open rate shown in the dashboard as a preview, not real data.
+
+> **Auth env vars (required at deploy).** `JWT_SECRET` and `DASHBOARD_PASSWORD_HASH` must both be set in Vercel. The server **fails closed** when `JWT_SECRET` is missing (login returns 500 rather than signing with any fallback secret) and rejects a password when `DASHBOARD_PASSWORD_HASH` is unset. Without JWT_SECRET and DASHBOARD_PASSWORD_HASH set, deployment authentically locks you out — that is intentional.

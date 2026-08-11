@@ -16,9 +16,15 @@ function readBody(req: IncomingMessage): Promise<string> {
   });
 }
 
-export async function parseJson<T>(req: IncomingMessage): Promise<T> {
+// Returns `null` on malformed JSON so callers can return a clean 400 instead
+// of letting a parse throw surface as a 500.
+export async function parseJson<T>(req: IncomingMessage): Promise<T | null> {
   const body = await readBody(req);
-  return JSON.parse(body || '{}') as T;
+  try {
+    return JSON.parse(body || '{}') as T;
+  } catch {
+    return null;
+  }
 }
 
 function json(res: ServerResponse, code: number, obj: unknown) {
@@ -68,9 +74,19 @@ export async function verifyPassword(plain: string, hash: string | undefined): P
   return bcrypt.compare(plain, hash);
 }
 
-export async function makeToken(): Promise<string> {
+// Fail closed: with no JWT_SECRET set we must NOT fall back to a guessable
+// secret — a known secret would let anyone forge a valid token and bypass the
+// password gate entirely. Callers treat a null secret as "server misconfigured"
+// (auth sign → 500, token verify → denied).
+function jwtSecret(): string | null {
+  const secret = process.env.JWT_SECRET;
+  return secret && secret.length > 0 ? secret : null;
+}
+
+export async function makeToken(): Promise<string | null> {
   await load();
-  const secret = process.env.JWT_SECRET || 'dev-only-secret';
+  const secret = jwtSecret();
+  if (!secret) return null;
   return jwt.sign({ aud: 'gmbvault-dashboard', sub: 'owner' }, secret, {
     expiresIn: '24h',
     algorithm: 'HS256',
@@ -81,7 +97,8 @@ export async function verifyToken(token: string | undefined): Promise<boolean> {
   if (!token) return false;
   try {
     await load();
-    const secret = process.env.JWT_SECRET || 'dev-only-secret';
+    const secret = jwtSecret();
+    if (!secret) return false;
     jwt.verify(token, secret, { algorithms: ['HS256'] });
     return true;
   } catch {

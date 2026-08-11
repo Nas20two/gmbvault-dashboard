@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { jsonResponse, sha256 } from '../src/lib/auth';
-import { logOpen } from '../src/lib/store';
+import { getBusinessSeed, logOpen } from '../src/lib/store';
 
 // Standard 1x1 transparent GIF (SATORI §5 verified).
 const GIF_B64 = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
@@ -11,13 +11,20 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
     return;
   }
   const url = new URL(req.url || '/', 'http://local');
-  const slug = url.searchParams.get('b') || 'unknown';
+  const slug = url.searchParams.get('b') || '';
   const emailHash = url.searchParams.get('e') || '';
-  await logOpen({
-    slug,
-    emailHash: emailHash ? sha256(emailHash) : '',
-    timestamp: new Date().toISOString(),
-  });
+
+  // Only log real opens: a known business slug carrying an email identity.
+  // Unvalidated/empty pixels are still served a GIF (so email rendering never
+  // breaks) but are not counted.
+  if (slug && emailHash && getBusinessSeed(slug)) {
+    await logOpen({
+      slug,
+      emailHash: sha256(emailHash),
+      timestamp: new Date().toISOString(),
+    });
+  }
+
   const buf = Buffer.from(GIF_B64, 'base64');
   res.statusCode = 200;
   res.setHeader('Content-Type', 'image/gif');

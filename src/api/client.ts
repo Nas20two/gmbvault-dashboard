@@ -1,5 +1,5 @@
 // Browser-side API client for the Vercel serverless functions.
-import type { Business, BusinessDetail, TrackRecord } from '../types';
+import type { Business, BusinessDetail } from '../types';
 
 const TOKEN_KEY = 'gmbvault_token';
 
@@ -87,8 +87,4 @@ export async function patchBusiness(slug: string, action: string, notes?: string
 
 export function trackUrl(slug: string, emailHash: string): string {
   return `/api/track?b=${encodeURIComponent(slug)}&e=${encodeURIComponent(emailHash)}`;
-}
-
-export async function getOpens(): Promise<TrackRecord[]> {
-  return (await request<{ opens: TrackRecord[] }>('/api/opens')).opens;
 }
