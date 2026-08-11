@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { clientIp, jsonResponse, makeToken, parseJson, rateLimited, recordFailure, verifyPassword } from '../src/lib/auth';
+import { clientIp, jsonResponse, makeToken, parseJson, rateLimited, recordFailure, verifyPassword } from '../src/lib/auth.js';
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
   if (req.method !== 'POST') {

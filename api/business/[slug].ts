@@ -1,7 +1,7 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { getBearer, jsonResponse, parseJson, verifyToken } from '../../src/lib/auth';
-import { toDetail } from '../../src/lib/businesses';
-import * as store from '../../src/lib/store';
+import { getBearer, jsonResponse, parseJson, verifyToken } from '../../src/lib/auth.js';
+import { toDetail } from '../../src/lib/businesses.js';
+import * as store from '../../src/lib/store.js';
 
 export default async function handler(req: IncomingMessage, res: ServerResponse, slug?: string) {
   const authed = await verifyToken(getBearer(req));
