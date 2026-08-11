@@ -64,28 +64,70 @@ const useKV = Boolean(
   process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN,
 );
 
-// In-memory fallback for local dev / no KV
+let kv: any = null;
+async function kvClient() {
+  if (!useKV) return null;
+  if (!kv) {
+    const mod = await import('@vercel/kv');
+    kv = mod.createClient({
+      url: process.env.KV_REST_API_URL,
+      token: process.env.KV_REST_API_TOKEN,
+    });
+  }
+  return kv;
+}
+
+// In-memory fallback for local dev / no KV.
 const memory: Record<string, PipelineState> = {};
 for (const slug of businessesBySlug.keys()) {
   memory[slug] = freshPipeline(slug);
 }
 
+const key = (slug: string) => `pipeline:${slug}`;
+const opensKey = () => 'opens:all';
+
 export async function getPipeline(slug: string): Promise<PipelineState> {
-  // Fallback: always return a fresh pipeline for every slug (even unknown).
-  return memory[slug] ?? freshPipeline(slug);
+  const c = await kvClient();
+  if (c) {
+    const raw = await c.get(key(slug));
+    if (raw != null) {
+      try {
+        return JSON.parse(raw as string) as PipelineState;
+      } catch {
+        // Unreadable/corrupt stored value — fall through to a fresh seed.
+      }
+    }
+  } else if (memory[slug]) {
+    return memory[slug];
+  }
+  return freshPipeline(slug);
 }
 
 export async function savePipeline(
   slug: string,
   state: PipelineState,
 ): Promise<void> {
-  if (useKV) {
-    // KV write — not implemented in Phase 1.1
+  const c = await kvClient();
+  if (c) {
+    // Store the whole state as one JSON string via set/get. hset rejects nulls
+    // (JSON-serializes them to the literal string "null"), corrupting
+    // repliedDate:null/convertedDate:null on the round-trip. JSON.stringify
+    // preserves real nulls.
+    await c.set(key(slug), JSON.stringify(state));
+    return;
   }
   memory[slug] = state;
 }
 
 export async function getAllPipeline(): Promise<Record<string, PipelineState>> {
+  const c = await kvClient();
+  const out: Record<string, PipelineState> = {};
+  if (c) {
+    for (const slug of businessesBySlug.keys()) {
+      out[slug] = await getPipeline(slug);
+    }
+    return out;
+  }
   return { ...memory };
 }
 
@@ -104,14 +146,31 @@ export function freshPipeline(slug: string): PipelineState {
   };
 }
 
-// ---- Open tracking (KV-backed, Phase 1.5) ---------------------------------
+// ---- Open tracking (KV-backed) ---------------------------------------------
 const opensMemory: TrackRecord[] = [];
 
 export async function logOpen(rec: TrackRecord): Promise<void> {
+  const c = await kvClient();
+  const all = await getOpens();
+  // Dedupe by (slug, emailHash) so re-opens of the same recipient don't
+  // inflate the count and "opened" flips exactly once.
+  if (all.some((o) => o.slug === rec.slug && o.emailHash === rec.emailHash)) {
+    return;
+  }
+  all.push(rec);
+  if (c) {
+    await c.set(opensKey(), all);
+    return;
+  }
   opensMemory.push(rec);
 }
 
 export async function getOpens(): Promise<TrackRecord[]> {
+  const c = await kvClient();
+  if (c) {
+    const v = await c.get(opensKey());
+    return Array.isArray(v) ? (v as TrackRecord[]) : [];
+  }
   return [...opensMemory];
 }
 
@@ -124,6 +183,8 @@ const EMAILS: Record<string, EmailSeed[]> = {};
 function seedEmails(slug: string): EmailSeed[] {
   const seed = businessesBySlug.get(slug);
   if (!seed || seed.emailsSent === 0) return [];
+  // One representative outreach record per business (Phase 1.2 streams the real
+  // thread via MCP get_thread; here the lookup table drives count + sent date).
   const count = Math.max(1, seed.emailsSent);
   const emails: EmailSeed[] = [];
   for (let i = 0; i < count; i++) {
