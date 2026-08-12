@@ -4,5 +4,11 @@
 
 @layer base {
   html { -webkit-font-smoothing: antialiased; }
-  body { @apply bg-gray-50 text-gray-900; }
+  body { @apply bg-vault-bg text-vault-text; }
+}
+
+/* GMBVault brand accent for focus rings and selection */
+@layer base {
+  :focus-visible { @apply outline-none ring-2 ring-vault-accent ring-offset-2 ring-offset-vault-bg; }
+  ::selection { @apply bg-vault-accent text-vault-bg; }
 }

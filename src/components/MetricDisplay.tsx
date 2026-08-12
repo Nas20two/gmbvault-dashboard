@@ -6,7 +6,7 @@ interface Props {
 }
 export default function MetricDisplay({ rating, reviewCount, score, rank }: Props) {
   return (
-    <p className="text-sm text-gray-600">
+    <p className="text-sm text-vault-muted">
       ★ {rating.toFixed(1)} · {reviewCount} reviews · Score {score} · Rank {rank}
     </p>
   );
