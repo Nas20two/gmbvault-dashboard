@@ -92,7 +92,7 @@ export async function getPipeline(slug: string): Promise<PipelineState> {
     const raw = await c.get(key(slug));
     if (raw != null) {
       try {
-        return JSON.parse(raw as string) as PipelineState;
+        return raw as PipelineState;
       } catch {
         // Unreadable/corrupt stored value — fall through to a fresh seed.
       }
