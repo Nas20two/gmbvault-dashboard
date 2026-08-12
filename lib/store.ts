@@ -61,17 +61,17 @@ export function getAudit(slug: string): AuditRow | undefined {
 
 // ---- KV adapter ------------------------------------------------------------
 const useKV = Boolean(
-  process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN,
+  process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN,
 );
 
 let kv: any = null;
 async function kvClient() {
   if (!useKV) return null;
   if (!kv) {
-    const mod = await import('@vercel/kv');
-    kv = mod.createClient({
-      url: process.env.KV_REST_API_URL,
-      token: process.env.KV_REST_API_TOKEN,
+    const { Redis } = await import('@upstash/redis');
+    kv = new Redis({
+      url: process.env.UPSTASH_REDIS_REST_URL!,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN!,
     });
   }
   return kv;
